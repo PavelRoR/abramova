@@ -1,0 +1,212 @@
+pink = #56305a
+black = #000
+brown = #d3ae6b
+green = #31C51D
+dark_pink = #2f1731
+grey = #C3C3C3
+white = #fff
+cont_width = 1123px
+
+@font-face {
+    font-family: 'BebasNeueBold';
+    src: url('../fonts/BebasNeue Bold.otf');
+    src: url('../fonts/BebasNeueBold.eot');
+    src: url('../fonts/BebasNeueBold.eot') format('embedded-opentype'),
+         url('../fonts/BebasNeueBold.woff2') format('woff2'),
+         url('../fonts/BebasNeueBold.woff') format('woff'),
+         url('../fonts/BebasNeueBold.ttf') format('truetype'),
+         url('../fonts/BebasNeueBold.svg#BebasNeueBold') format('svg');
+}
+
+@font-face {
+    font-family: 'OfficinaSerifBookC';
+    src: url('../fonts/OfficinaSerifBookC.eot');
+    src: url('../fonts/OfficinaSerifBookC.eot') format('embedded-opentype'),
+         url('../fonts/OfficinaSerifBookC.woff2') format('woff2'),
+         url('../fonts/OfficinaSerifBookC.woff') format('woff'),
+         url('../fonts/OfficinaSerifBookC.ttf') format('truetype'),
+         url('../fonts/OfficinaSerifBookC.svg#OfficinaSerifBookC') format('svg');
+}
+@font-face {
+    font-family: 'PlayfairDisplayBold';
+    src: url('../fonts/PlayfairDisplayBold.eot');
+    src: url('../fonts/PlayfairDisplayBold.eot') format('embedded-opentype'),
+         url('../fonts/PlayfairDisplayBold.woff2') format('woff2'),
+         url('../fonts/PlayfairDisplayBold.woff') format('woff'),
+         url('../fonts/PlayfairDisplayBold.ttf') format('truetype'),
+         url('../fonts/PlayfairDisplayBold.svg#PlayfairDisplayBold') format('svg');
+}
+
+@font-face {
+    font-family: 'OfficinaSerifBookCItalic';
+    src: url('../fonts/OfficinaSerifBookCItalic.eot');
+    src: url('../fonts/OfficinaSerifBookCItalic.eot') format('embedded-opentype'),
+         url('../fonts/OfficinaSerifBookCItalic.woff2') format('woff2'),
+         url('../fonts/OfficinaSerifBookCItalic.woff') format('woff'),
+         url('../fonts/OfficinaSerifBookCItalic.ttf') format('truetype'),
+         url('../fonts/OfficinaSerifBookCItalic.svg#OfficinaSerifBookCItalic') format('svg');
+}
+
+   
+
+html {
+  line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+  text-decoration none
+}
+
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+
+
+img {
+  border-style: none;
+}
+
+ul
+	list-style none
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+
+*
+	margin 0
+	padding 0
+	outline 0
+	box-sizing border-box
+	
+body
+	font-size 18px
+	font-family 'OfficinaSerifBookC', sans-serif
+	color black
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+
+	
+.container
+	width cont_width
+	margin 0 auto
+
+.left
+	float left
+	
+.right
+	float right
+	
+.clfix
+	clear both
+/*! Меню */
+@import 'parts/menu'
+/*! Шапка */
+@import 'parts/header'
+/*! Первый экран */
+@import 'parts/first_section'
+/*! Второй экран */
+@import 'parts/second_screen'
+/*! Третий экран */
+@import 'parts/third_screen'
+/*! Четвертый экран */
+@import 'parts/fourth_screen'
+/*! Пятый экран */
+@import 'parts/fifth_screen'
+/*! Бонус экран */
+@import 'parts/bonus'
+/*! Шестой экран */
+@import 'parts/sixth_screen'
+/*! Бонус экран */
+@import 'parts/bonus_2'
+/*! Седьмо экран экран */
+@import 'parts/seventh_screen'
+/*! Меди запросы */
+@import 'parts/_medias'

@@ -1,0 +1,68 @@
+#fifth_screen
+	background-image url(../img/second_day_back.jpg)
+	background-size cover
+	background-repeat no-repeat
+	background-attachment scroll
+	padding-bottom: 39px;
+	width 100%
+	.container
+		position relative
+	h3
+		font-family 'PlayfairDisplayBold', serif
+		color brown
+		font-size: 72px;
+
+		padding-top: 43px;
+
+		font-weight: normal;
+
+		margin-left: 49px;
+		span
+			font-size 80px
+	h4
+		font-family 'PlayfairDisplayBold', serif
+		color white
+		font-size 38px
+		margin-top 5px
+		margin-left 47px
+		font-weight: normal;
+.day_2_ol
+	text-align: left;
+
+	font-size: 25px;
+
+	width: 53%;
+
+	margin: 35px 0 0 45px
+	list-style: none;
+	counter-reset: my-counter;
+	li
+		margin-bottom 15px
+		counter-increment: my-counter;
+		overflow hidden
+		span
+			vertical-align middle
+			line-height 2.3
+			color white
+		&:nth-child(1) span
+			line-height 1
+		&:nth-child(3) span
+			line-height 1
+		&:nth-child(5) span
+			line-height 1
+		&:nth-child(6) span
+			line-height 1
+		&:before
+			content: counter(my-counter);
+			background: brown;
+			padding: 14px 24px;
+			border-radius: 50%;
+			display: inline-block;
+			float left
+			color: black;
+			margin-right: 15px;
+			margin-bottom 2px
+.evelina_2
+	position absolute
+	top -51px
+	right 0

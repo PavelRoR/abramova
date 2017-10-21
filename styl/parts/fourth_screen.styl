@@ -1,0 +1,52 @@
+#fourth_screen_1
+	padding-top 25px
+	.container
+		background-image url(../img/first_day_back.jpg)
+		background-size cover
+		background-repeat no-repeat
+		background-attachment scroll
+		background-position 0 160px
+		text-align center
+		padding-bottom 40px
+		h3
+			font-size: 34px;
+
+			font-weight: normal;
+
+			margin-bottom: 6px;
+		h4
+			font-size: 34px;
+
+			font-style: normal;
+
+			margin-top: 16px;
+.day_1_ol
+	text-align: left;
+
+	font-size: 30px;
+
+	width: 75%;
+
+	margin: 18px auto 0;
+	list-style: none;
+	counter-reset: my-counter;
+	li
+		margin-bottom 15px
+		counter-increment: my-counter;
+		overflow hidden
+		span
+			vertical-align middle
+			line-height 2
+		&:nth-child(3) span
+			line-height 1
+		&:nth-child(5) span
+			line-height 1
+		&:before
+			content: counter(my-counter);
+			background: brown;
+			padding: 14px 24px;
+			border-radius: 50%;
+			display: inline-block;
+			float left
+			color: black;
+			margin-right: 15px;

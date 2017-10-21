@@ -1,0 +1,46 @@
+#sixth_screen
+	background-image: url(../img/3_day_back.jpg)
+	background-position: bottom center
+	background-repeat: no-repeat
+	background-size cover
+	width: 100%
+	height: auto
+	padding-bottom: 40px
+	.container
+		position: relative
+		h4
+			font-size: 34px;
+			text-align: center
+			font-weight: normal;
+			margin-top: 16px;
+.tree_dark_icons
+	position absolute
+	bottom: 0
+	right: 0
+.day_3_ol
+	text-align: left;
+	font-size: 30px;
+	width: 75%;
+	margin: 18px auto 0;
+	list-style: none;
+	counter-reset: my-counter;
+	li
+		margin-bottom 15px
+		counter-increment: my-counter;
+		overflow hidden
+		span
+			vertical-align middle
+			line-height 2
+		&:nth-child(1) span
+			line-height 1
+		&:nth-child(6) span
+			line-height 1
+		&:before
+			content: counter(my-counter);
+			background: brown;
+			padding: 14px 24px;
+			border-radius: 50%;
+			display: inline-block;
+			float left
+			color: black;
+			margin-right: 15px;

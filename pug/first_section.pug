@@ -1,0 +1,22 @@
+// Главный экран
+section#first_section
+	.container
+		img(src="img/evelina.png", alt="Эвелина Блёданс").evelina
+		.heading
+			h1.wow.fadeInDown(data-wow-duration="2s" data-wow-delay="2") Только для женщин 
+				br
+				small Совершенно секретно
+			h2.wow.fadeInUp(data-wow-duration="2s" data-wow-delay="2.5") «О чем молчат мужчины» 
+				br
+				| бесплатный онлайн-интенсив
+			h3.date.wow.pulse(data-wow-duration="2s" data-wow-delay="4" data-wow-iteration="infinite") С 20 ПО 25 НОЯБРЯ
+			ul.bullits
+				li Каждая женщина должна быть счастливой! 
+				li Все, что до этого мы знали о мужчинах, придется забыть
+		img(src="img/janna.png", alt="Жанна Абрамова").janna
+		.clfix
+		form(action="").first_screen_form
+			p заполните форму и получите видео-бонус “Формула женского счастья” уже сейчас!
+			input(type="email" placeholder="Введите Вашу почту" id="email")
+			input(type="submit" value="ЗАПИСАТЬСЯ" id="submit")
+			.clfix

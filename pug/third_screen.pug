@@ -1,0 +1,86 @@
+// Третий экран
+section#third_screen
+	.container
+		img(src="img/mars_1.png", alt="Марс")#mars
+		img(src="img/3_icons.png", alt="3 сердца")#three_hearts
+		h3 Вам это знакомо?
+		.row
+			.col-3.left.lower
+				.cell
+					.cell_head
+						img(src="img/love.png", alt="Трудности знакомства").icons.wow.rubberBand(data-wow-offset="200" data-wow-duration="1s")
+						h4 Трудности знакомства
+					ol.risons
+						li.two
+							span нет мужчины на сейчас, но хочется познакомиться
+						li.two
+							span не знаю как и где можно познакомиться
+						li.tree
+							span могу познакомиться, но не знаю как в дальнейшем развивать отношения
+				.cell
+					.cell_head
+						img(src="img/question.png", alt="Не умею или не знаю").icons.wow.rubberBand(data-wow-offset="200" data-wow-duration="1s")
+						h4 Не умею или не знаю
+					ol.risons
+						li.two
+							span не умею принимать комплименты и подарки
+						li.tree
+							span мужчина ни в чем не заинтересован - не знаю как вдохновить его на заработок
+						li.tree
+							span не понимаю почему мужчина все время придирается ко мне
+			.col-3#middle.left
+				.cell
+					.cell_head
+						img(src="img/broken-heart.png", alt="Неудовлетворенные ожидания от отношений").icons.wow.rubberBand(data-wow-offset="200" data-wow-duration="1s")
+						h4#broken_heaert Неудовлетворенные ожидания от отношений
+					ol.risons
+						li.one
+							span мужчина не женится
+						li.one
+							span мужчина мало зарабатывает
+						li.two
+							span мужчина не заботится обо мне, не делает как я хочу
+					img(src="img/divider_2.png", alt="Разделитель 2")#divider_2
+				.cell
+					.cell_head
+						img(src="img/heart_2.png", alt="Любовный треугольник").icons.wow.rubberBand(data-wow-offset="200" data-wow-duration="1s")
+						h4 Любовный треугольник
+					ol.risons
+						li.tree
+							span все мужчины, которые мне нравятся оказываются женатыми
+						li.tree
+							span как перейти из статуса "любовница" в статус "жена"
+						li.two
+							span у мужа появилась любовница - что делать?
+			.col-3.right.lower
+				.cell
+					.cell_head
+						img(src="img/scared.png", alt="Страхи и сомнения").icons.wow.rubberBand(data-wow-offset="200" data-wow-duration="1s")
+						h4 Страхи и сомнения
+					ol.risons
+						li.two
+							span сомневаюсь в серьезности намерений мужчины
+						li.two
+							span есть страх, что стану мужчине не интересна
+						li.two
+							span хочу расстаться с мужем и боюсь остаться одна
+				.cell
+					.cell_head
+						img(src="img/user.png", alt="Я хочу").icons.wow.rubberBand(data-wow-offset="200" data-wow-duration="1s")
+						h4#want Я хочу
+					ol.risons
+						li.two
+							span хочу встретить достойного мужчину
+						li.two
+							span выйти замуж по взаимной любви
+						li.two
+							span быть всегда той единственной и желанной
+			.clfix
+				
+		#subscribe_block.wow.flipInX(data-wow-offset="250")
+			h3 Хотите научиться видеть истинные намерения мужчины, а не мучиться в догадках почему и зачем <br>он так сказал и поступил?
+			h4.date.wow.pulse(data-wow-duration="2s" data-wow-delay="4" data-wow-iteration="infinite" data-wow-offset="250") С 20 ПО 25 НОЯБРЯ
+			h3 будьте вместе с нами на онлайн-интенсиве <br>«О чем молчат мужчины»!
+			form(action="")._form
+				input(type="email" placeholder="Введите Вашу почту" id="email_2")
+				input(type="submit" value="ЗАПИСАТЬСЯ" id="submit_2")
